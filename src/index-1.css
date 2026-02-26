@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+:root {
+  --sufem-emerald: #064e3b;
+  --sufem-gold: #d97706;
+  --sufem-paper: #fdfcf7;
+  --sufem-ink: #1a2e2a;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--sufem-paper);
+  color: var(--sufem-ink);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30L15 30z' fill='%23064e3b' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.sufem-logo-btn {
+  background: white;
+  border: 1px solid rgba(6, 78, 59, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  padding: 8px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sufem-logo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(6, 78, 59, 0.08);
+  border-color: var(--sufem-emerald);
+}
+
+.verdict-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: inline-block;
+  background-color: var(--sufem-emerald);
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.faq-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(6, 78, 59, 0.05);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  border-color: var(--sufem-emerald);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(6, 78, 59, 0.04);
+}
+
+.faq-item.active {
+  border-color: var(--sufem-emerald);
+  background-color: #f0fdf4;
+  box-shadow: 0 20px 40px rgba(6, 78, 59, 0.06);
+}
+
+.cat-btn {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  color: #4b5563;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cat-btn:hover {
+  background-color: #f0fdf4;
+  color: var(--sufem-emerald);
+}
+
+.cat-btn.active {
+  background-color: var(--sufem-emerald);
+  color: white;
+  box-shadow: 0 4px 12px rgba(6, 78, 59, 0.2);
+}
+
+.pagination-btn {
+  min-width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  background-color: white;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+.pagination-btn:hover {
+  border-color: var(--sufem-emerald);
+  color: var(--sufem-emerald);
+}
+
+.pagination-btn.active {
+  background-color: var(--sufem-emerald);
+  color: white;
+  border-color: var(--sufem-emerald);
+}
+
+.arabic-calligraphy {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--sufem-emerald);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(6, 78, 59, 0.05), transparent),
+              radial-gradient(circle at bottom left, rgba(217, 119, 6, 0.05), transparent);
+}
